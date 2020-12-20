@@ -1,3 +1,7 @@
+<% content_for :title do %>
+  <%= @entry.meal_type %> &ndash; <%= DateTime.now.to_s(:nice_date) %>
+<% end %>
+
 <p>
   <strong>Meal type:</strong>
   <%= @entry.meal_type %>
